@@ -49,72 +49,71 @@ public class Main {
     }
 }
 
-        class Chatbot {
-            public static void chat(String[] args) {
-                //part 2
-                Scanner scanner = new Scanner(System.in);
+class Chatbot {
+    public static void chat(String[] args) {
+        //part 2
+        Scanner scanner = new Scanner(System.in);
 
-                System.out.println("Hello! Please answer my questions.");
+        System.out.println("Hello! Please answer my questions.");
 
-                System.out.println("Please enter your name:");
-                String nam = scanner.nextLine();
+        System.out.println("Please enter your name:");
+        String nam = scanner.nextLine();
 
-                System.out.println("How old are you?");
-                int age = scanner.nextInt();
-                scanner.nextLine();
+        System.out.println("How old are you?");
+        int age = scanner.nextInt();
+        scanner.nextLine();
 
-                System.out.println("How tall are you? (only meters)");
-                double height = scanner.nextDouble();
-                scanner.nextLine();
+        System.out.println("How tall are you? (only meters)");
+        double height = scanner.nextDouble();
+        scanner.nextLine();
 
-                System.out.println("What's your favorite color?");
-                String color = scanner.nextLine();
+        System.out.println("What's your favorite color?");
+        String color = scanner.nextLine();
 
-                System.out.println("Where do you live?");
-                String country = scanner.nextLine();
+        System.out.println("Where do you live?");
+        String country = scanner.nextLine();
 
-                System.out.println("What's your phone number?");
-                long phoneNumber = scanner.nextLong();
-                scanner.nextLine();
+        System.out.println("What's your phone number?");
+        int phoneNumber = scanner.nextInt();
+        scanner.nextLine();
 
-                System.out.println("What's your favourite car brand?");
-                String car = scanner.nextLine();
+        System.out.println("What's your favourite car brand?");
+        String car = scanner.nextLine();
 
-                System.out.println("What's your favorite number?");
-                int favNumber = scanner.nextInt();
-                scanner.nextLine();
+        System.out.println("What's your favorite number?");
+        int favNumber = scanner.nextInt();
+        scanner.nextLine();
 
-                System.out.println("What's your favorite food?");
-                String food = scanner.nextLine();
+        System.out.println("What's your favorite food?");
+        String food = scanner.nextLine();
 
-                System.out.println("What's your favourite animal?");
-                String animal = scanner.nextLine();
+        System.out.println("What's your favourite animal?");
+        String animal = scanner.nextLine();
 
 
-                System.out.println("Name: " + nam);
-                System.out.println("Age: " + age);
-                System.out.println("Height: " + height + " meters");
-                System.out.println("Favorite Color: " + color);
-                System.out.println("Country: " + country);
-                System.out.println("Phone Number: " + phoneNumber);
-                System.out.println("Favorite car brand: " + car);
-                System.out.println("Favorite Number: " + favNumber);
-                System.out.println("Favorite Food: " + food);
-                System.out.println("Favorite animal: " + animal);
+        System.out.println("Name: " + nam);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height + " meters");
+        System.out.println("Favorite Color: " + color);
+        System.out.println("Country: " + country);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Favorite car brand: " + car);
+        System.out.println("Favorite Number: " + favNumber);
+        System.out.println("Favorite Food: " + food);
+        System.out.println("Favorite animal: " + animal);
 
-                // Using String operations
+        // Using String operations
 
-                if (animal.startsWith("c")) {
-                    System.out.println("Cool, my favourite animal is cat too");
-                }
-                if (car.contains("Toyota")) {
-                    System.out.println("Cool, my favourite car is toyota too");
-                }
-                int index = food.indexOf("pizza");
-                if (index != -1) {
-                    System.out.println("Your favorite food contains 'pizza' at position " + index + "");
-
-                }
-            }
+        if (animal.startsWith("c")) {
+            System.out.println("Cool, my favourite animal is cat too");
         }
+        if (car.contains("Toyota")) {
+            System.out.println("Cool, my favourite car is toyota too");
+        }
+        int index = food.indexOf("pizza");
+        if (index != -1) {
+            System.out.println("Your favorite food contains 'pizza' at position " + index + "");
 
+        }
+    }
+}
